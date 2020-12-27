@@ -1,3 +1,13 @@
-from testScript import *
+from pyCalc.Calc import *
 
-hello_world("First init test")
+
+def main() -> None:
+    """
+    Main function of the program
+    """
+    c = Calc()
+    d = c.exec_operation(1, 2, Operation.ADD)
+    print(d)
+
+
+main()
